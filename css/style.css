@@ -1,0 +1,292 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    border: solid 2px red; /* QUITAR PARA PRESENTAR TRABAJO, SIN LÍNEAS PARA VER MARGENES*/
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(../assets/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "open_sans";
+    src: url(../assets/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+#logo {
+    width: 35px; /* Tamaño del contenido */
+    height: 35px; /* Tamaño del contenido */
+    border-radius: 50%;
+}
+body {
+    background-color: #f2f2f2;
+    color: #401a19;
+    font-family: 'montserrat', sans-serif;
+}
+#sticky { /*ENCABEZADO, FINALIZADO*/
+    background-color: #8c603b;
+    position: sticky;
+    left: 10px;
+    top: 1px;
+}
+h1 { /*H1 GENERAL*/
+    color: #401919;
+    font-family: "montserrat";
+    font-weight: 900;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.menu { 
+    color: #401919;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    /*flex-flow: row wrap;*/
+    flex-direction: row;
+    padding: 0px 10px;
+}
+h2 { /*H2 GENERAL*/
+    color: #401919;
+    font-family: "montserrat";
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    justify-content: center;
+}
+h3 { /*H3 GENERAL*/
+    color: #401919;
+    font-family: "montserrat";
+    font-weight: bold;
+}
+ul { /*listas general*/
+    text-align: left;    
+    height: 15%;
+    flex-wrap: nowrap;  
+    margin-top: 16px; 
+}
+ul .inline { /*lista menú nav*/
+    list-style-type: none;
+    padding: 0px 5px 0px 5px;
+    border: 1px solid black;
+    border-radius: 7%;
+    background-color: #f2f2f2;;
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+}
+a{ /*anchord general*/
+    color: #401919;
+    text-decoration: none;
+    text-wrap: nowrap;
+}
+footer { /*footer general*/
+    background-color: #8c603b;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+img {
+    width: 25%;
+    height: 25%;
+}
+.whatsapp-button {/*finalizado*/
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+.whatsapp-button img { /*finalizado*/
+    width: 35px;
+    height: 35px;
+}
+.seccion1 {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.seccion1banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;   
+}
+.seccion1 img {
+    display: flex;
+    width: 55%;
+    height: auto;
+    margin: 5px;
+    border-radius: 20px;
+}
+.seccion2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+}
+.seccion2 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.seccion2 p {
+    color: #401919;
+    font-size: x-large;
+}
+/* probando con boostrap main #nosotros {
+    display: flex;
+    padding: 20px;
+    list-style-type: disc;
+    font-size: x-large;
+}
+    .nosotros2 img {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+       }
+    .nosotros p{
+        font-size: large;
+        padding: 1rem;
+    }*/
+main .serv {
+        text-align: center;
+        margin: auto;
+        padding: 20px;
+        max-width: 1200px;
+    } 
+    .servicios {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+        grid-template-rows: repeat(2, 1fr); /* Dos filas */
+        gap: 20px; /* Espacio entre los elementos */
+    } 
+    .serv1, .serv2 {
+        background-color: #f0f0f0;
+        text-align: center;
+        margin: 20px;
+        border-radius: 10px;
+    } 
+    .serv1 img, .serv2 img, .serv3{
+        width: 50%;
+        height: auto;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+/* probando con boostrap.contacto {
+    display: flex;
+}
+.contacto1{
+    width: 50%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}*/
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 200px);
+    gap: 10px; /*espacio entre los elementos*/
+    grid-template-areas: 
+        "item1 item1 item2 item3"
+        "item1 item1 item4 item5"
+        "item6 item7 item8 item5"
+        "item9 item9 item10 item10";
+    margin: 10px;
+}
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*asegura que las imagenes se ajustan al contenedor*/
+}
+.item1 {
+    grid-area: item1;
+}
+.item2 {
+    grid-area: item2;
+}
+.item3 {
+    grid-area: item3;
+}
+.item4 {
+    grid-area: item4;
+}
+.item5 {
+    grid-area: item5;
+}
+.item6 {
+    grid-area: item6;
+}
+.item7 {
+    grid-area: item7;
+}
+.item8 {
+    grid-area: item8;
+}
+.item9 {
+    grid-area: item9;
+}
+.item10 {
+    grid-area: item10;
+}
+
+.botonformulario {
+    background-color: #8c603b;
+    border-color: #401919;
+    
+}
+
+@media (max-width:425px){
+    .body {
+        border: solid 2px red;
+    }
+    .header{
+        flex-direction: column;
+    }
+
+    .menu{
+        flex-direction: colum;
+    }
+    .seccion1 {
+        flex-direction: column;
+        border: none;
+        padding: 2px;
+    }
+    .seccion1 img {
+        justify-content: center;
+        width: 100%;
+    }
+    .seccion2{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        gap: 10px;
+        align-items: center;
+        text-align: center;
+    }
+    .galeria {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(10, 1fr);
+        grid-template-areas: 
+        "item1"
+        "item2"
+        "item3"
+        "item4"
+        "item5"
+        "item6"
+        "item7"
+        "item8"
+        "item9"
+        "item10";
+    }
+}
