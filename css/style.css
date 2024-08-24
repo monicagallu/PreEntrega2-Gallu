@@ -1,6 +1,6 @@
 *{
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     /* border: solid 2px red; QUITAR PARA PRESENTAR TRABAJO, SIN LÍNEAS PARA VER MARGENES*/
 }
 @font-face {
@@ -10,6 +10,11 @@
 @font-face {
     font-family: "open_sans";
     src: url(../assets/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+:root {
+    --main-bg-color: #8c603b;
+    --main-border-color: #401919;
+    --main-text-color: #401919;
 }
 #logo {
     width: 35px;
