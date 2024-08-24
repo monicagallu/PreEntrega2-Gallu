@@ -230,7 +230,7 @@ main .serv {
     width: 100%;
     height: 450px;
 }
-@media (max-width:425px){
+/* PRUEBAS CON AI @media (max-width:425px){
     .body {
         border: solid 2px red;
     }
@@ -271,5 +271,17 @@ main .serv {
         "item8"
         "item9"
         "item10";
+    }
+}
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    .servicios {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .serv1, .serv2 {
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
