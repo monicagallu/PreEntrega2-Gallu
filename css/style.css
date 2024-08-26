@@ -33,6 +33,8 @@ body {
     left: 10px;
     top: 1px;
     z-index: 1000;
+    top: 2px;
+    left: 0;
 }
 
 h1 {
@@ -84,11 +86,11 @@ ul .inline {
     padding: 0px 5px 0px 5px;
     margin: 2px;
     border: 1px solid black;
-    border-radius: 7%;
+    border-radius: 5%;
     background-color: #f2f2f2;
-    text-align: center;
     display: inline-block;
     box-sizing: border-box;
+    list-style-type: none;
 }
 
 a{
@@ -320,12 +322,19 @@ main .serv {
     background-color: #8c603b;
     text-align: center;
     border-color: #401a19;
+    color: #401a19;
 }
 
+.btn:hover {
+    background-color: #401919;
+    border-color: #8c603b;
+    color: #8c603b;
+}
 .container-fluid{
     padding: 10px;
     margin: 10px;
 }
+
 @media (max-width: 576px){
     #sticky {
         position: sticky;
@@ -357,19 +366,21 @@ main .serv {
         justify-content: space-between;
         padding: 8px;
         margin: 0;
-        list-style: none;
         width: 100%;
+        list-style: none;
     }
 
     nav ul li {
         flex-grow: 1;
         text-align: center;
     }
+
     .seccion1 {
         display: flex;
         flex-direction: column;
         padding: 10px;
     }
+    
     .seccion1banner {
         display: flex;
         flex-direction: column;
