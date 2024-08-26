@@ -1,7 +1,7 @@
 *{
     margin: 0%;
     padding: 0%;
-    border: solid 2px red;
+    /*border: solid 2px red;*/
 }
 
 @font-face {
@@ -85,7 +85,7 @@ ul .inline {
     margin: 2px;
     border: 1px solid black;
     border-radius: 7%;
-    background-color: #f2f2f2;;
+    background-color: #f2f2f2;
     text-align: center;
     display: inline-block;
     box-sizing: border-box;
@@ -284,8 +284,8 @@ main .serv {
 
 .banner2 {
     width: 100%;
-    height: 50vh; /* La imagen ocupa el 50% de la altura de la ventana del navegador */
-    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin estirarse */
+    height: 50vh;
+    object-fit: cover;
     display: block;
 }
 
@@ -294,13 +294,12 @@ main .serv {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    color: white; /* Color de texto blanco */
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejorar la legibilidad */
+    color: white; 
+    background-color: rgba(0, 0, 0, 0.5); 
     padding: 10px;
     width: 100%;
     text-align: center;
 }
-
 
 .carousel {
     z-index: 1; 
@@ -317,6 +316,16 @@ main .serv {
     color: #fff;
 }
 
+.btn {
+    background-color: #8c603b;
+    text-align: center;
+    border-color: #401a19;
+}
+
+.container-fluid{
+    padding: 10px;
+    margin: 10px;
+}
 @media (max-width: 576px){
     #sticky {
         position: sticky;
