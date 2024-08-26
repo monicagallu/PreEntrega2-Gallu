@@ -24,6 +24,7 @@ body {
 #sticky {
     background-color: #8c603b;
     position: sticky;
+    z-index: 1000; /* Asegura que esté por encima del carrusel */
     left: 10px;
     top: 1px;
 }
@@ -62,7 +63,7 @@ ul {
     flex-wrap: nowrap;  
     margin-top: 16px; 
 }
-ul .inline {
+.inline {
     list-style-type: none;
     padding: 0px 5px 0px 5px;
     border: 1px solid black;
@@ -225,6 +226,7 @@ main .serv {
     width: 100%;
     height: 450px;
 }
+
 @media (max-width:425px){
     .body {
         border: solid 2px red;
