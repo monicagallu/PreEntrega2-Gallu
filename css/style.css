@@ -27,14 +27,9 @@ body {
     font-family: 'montserrat', sans-serif;
 }
 
-#sticky {
-    background-color: #8c603b;
-    position: sticky;
-    left: 10px;
-    top: 1px;
-    z-index: 1000;
-    top: 2px;
-    left: 0;
+img {
+    width: 25%;
+    height: 25%;
 }
 
 h1 {
@@ -46,6 +41,21 @@ h1 {
     padding-top: 15px;
 }
 
+h2 {
+    color: #401919;
+    font-family: "montserrat";
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    justify-content: center;
+}
+
+h3 {
+    color: #401919;
+    font-family: "montserrat";
+    font-weight: bold;
+}
+
 .menu { 
     color: #401919;
     display: flex;
@@ -55,29 +65,26 @@ h1 {
     padding: 0px 10px;
 }
 
+.nav {
+    display: block;
+    unicode-bidi: isolate;
+}
+
 .menu nav ul {
     display: flex;
     flex-direction: row;
 }
 
-h2 {
+a{
     color: #401919;
-    font-family: "montserrat";
-    text-align: center;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    justify-content: center;
-}
-h3 {
-    color: #401919;
-    font-family: "montserrat";
-    font-weight: bold;
+    text-decoration: none;
+    text-wrap: nowrap;
 }
 
 ul {
     text-align: left;    
     height: 15%;
-    flex-wrap: nowrap;  
+    flex-wrap: nowrap; 
     margin-top: 16px; 
 }
 
@@ -93,25 +100,16 @@ ul .inline {
     list-style-type: none;
 }
 
-a{
-    color: #401919;
-    text-decoration: none;
-    text-wrap: nowrap;
-}
-
-footer {
+#sticky {
     background-color: #8c603b;
-    padding: 20px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
-    flex-flow: row wrap;
+    position: sticky;
+    left: 10px;
+    top: 1px;
+    z-index: 1000;
+    top: 2px;
+    left: 0;
 }
 
-img {
-    width: 25%;
-    height: 25%;
-}
 
 .whatsapp-button {
     position: fixed;
@@ -333,6 +331,15 @@ main .serv {
 .container-fluid{
     padding: 10px;
     margin: 10px;
+}
+
+footer {
+    background-color: #8c603b;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-flow: row wrap;
 }
 
 @media (max-width: 576px){
