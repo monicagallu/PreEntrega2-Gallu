@@ -36,7 +36,6 @@ h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-
 h2 {
     color: #401919;
     font-family: "montserrat";
@@ -91,13 +90,13 @@ ul {
 }
 
 ul .inline {
-
     padding: 0px 5px 0px 5px;
     margin: 2px;
     border: 1px solid black;
     border-radius: .25rem;
     background-color: #f2f2f2;
     display: inline-block;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
 }
 
 #sticky {
@@ -144,6 +143,7 @@ ul .inline {
     padding: 40px;   
 }
 
+
 .seccion1 img {
     display: flex;
     width: 40%;
@@ -169,8 +169,15 @@ ul .inline {
 }
 
 .seccion2 p {
+    display: inline-block;
     color: #401919;
     font-size: x-large;
+    padding: 0px 5px 0px 5px;
+    margin: 2px;
+    border: 1px solid black;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+    border-radius: .25rem;
+    background-color: #8c603b;  
 }
 
 main .serv {
@@ -347,6 +354,31 @@ footer {
     justify-content: space-around;
     flex-flow: row wrap;
 }
+
+.indentado {
+    text-indent: 2rem;
+}
+
+.gridserv {
+    margin: 10px;
+}
+
+.grid-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto; 
+    gap: 1rem; 
+    list-style: none; 
+    padding: 0;
+}
+
+.grid-list li {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+}
+
 
 @media (max-width: 576px){
     #sticky {
