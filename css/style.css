@@ -31,7 +31,6 @@ h1 {
     font-family: "montserrat";
     font-weight: 700;
     text-align: center;
-    padding-bottom: 15px;
     padding-top: 15px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -145,7 +144,6 @@ ul .inline {
 
 
 .seccion1 img {
-    display: flex;
     width: 40%;
     height: 405px;
     margin: 5px;
@@ -379,7 +377,6 @@ footer {
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
 }
 
-
 @media (max-width: 576px){
     #sticky {
         position: sticky;
@@ -532,3 +529,5 @@ footer {
         padding: 10px; 
     }
 }
+
+
