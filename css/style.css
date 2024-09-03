@@ -3,6 +3,7 @@
     padding: 0%;
 }
 
+
 @font-face {
     font-family: "Montserrat";
     src: url(../assets/Montserrat/Montserrat-VariableFont_wght.ttf);
@@ -376,6 +377,11 @@ footer {
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
 }
 
+.container-fluid {
+    padding: 0px;
+    margin: 0px;
+}
+
 @media (max-width: 576px){
     #sticky {
         position: sticky;
@@ -409,6 +415,7 @@ footer {
         margin: 0;
         width: 100%;
         list-style: none;
+        flex-direction: column;
     }
 
     nav ul li {
