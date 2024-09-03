@@ -388,6 +388,16 @@ footer {
         list-style: none;
         flex-direction: column;
     }
+
+    .grid-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        gap: 1rem;
+        list-style: none;
+        padding: 0;
+    }
+
 }
 
 @media (max-width: 576px){
@@ -541,6 +551,15 @@ footer {
 
     .serv3 p {
         padding: 10px; 
+    }
+
+    .grid-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        gap: 1rem;
+        list-style: none;
+        padding: 0;
     }
 }
 
