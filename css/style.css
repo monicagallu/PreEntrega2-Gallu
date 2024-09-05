@@ -379,39 +379,25 @@ footer {
 }
 
 @media (max-width: 356px) {
-    nav ul {
-        display: flex;
-        justify-content: space-between;
-        padding: 8px;
-        margin: 0;
-        width: 100%;
-        list-style: none;
-        flex-direction: column;
-    }
-
-    .grid-list {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: auto;
-        gap: 1rem;
-        list-style: none;
-        padding: 0;
-    }
-
-}
-
-@media (max-width: 576px){
-    #sticky {
-        position: sticky;
-        z-index: 1000;
-    }
-
     header {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
         padding: 10px;
+    } 
+
+    .galeria {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, auto);
+    }
+}
+
+@media (max-width: 576px) {
+    #sticky {
+        position: sticky;
+        z-index: 1000;
     }
 
     h1 {
