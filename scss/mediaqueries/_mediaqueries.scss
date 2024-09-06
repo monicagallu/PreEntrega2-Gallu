@@ -5,14 +5,16 @@
       z-index: 1000;
   }
     header {
-      @extend%flexcolum;
+      display: flex;
+      flex-direction: column;
       background-color: #f8f9fa;
       padding: 10px;
       text-align: center;
     }
     
     nav ul {
-      @extend%flexcolum;
+      display: flex;
+      flex-direction: column;
       flex-wrap: wrap;
       justify-content: space-between;
       padding: 8px;
