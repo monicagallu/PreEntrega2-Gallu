@@ -19,7 +19,7 @@ $text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 * {
   margin: 0;
   padding: 0;
-  /*border: solid 2px red; // Quitar para producción*/
+  border: solid 2px red;
 }
 
 body {
@@ -194,27 +194,6 @@ a {
     }
   }
 }
-
-.serv {
-    padding: 10px;
-  }
-  .serv .servicios {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .serv .servicios .serv1, .serv .servicios .serv2 {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  .serv .servicios .serv1 img, .serv .servicios .serv2 img {
-    width: 100%;
-    height: auto;
-  }
-  .serv .servicios .serv2 {
-    border: 0;
-    margin: 0;
-  }
 
 // Footer
 footer {
