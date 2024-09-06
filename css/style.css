@@ -64,7 +64,11 @@ h3 {
 }
 
 a {
+  color: black;
   text-decoration: none;
+}
+a:hover {
+  color: #401919;
 }
 
 #logo {
@@ -205,6 +209,111 @@ footer {
   background-color: #401919;
   border-color: #8c603b;
   color: #8c603b;
+}
+
+.serv {
+  text-align: center;
+  padding: 20px;
+}
+
+.servp {
+  padding: 20px;
+  text-align: justify;
+  color: #401919;
+}
+
+.servicios {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.servicios .serv1 {
+  flex: 1 1 45%;
+  padding: 10px;
+}
+.servicios .serv1 img {
+  width: 98%;
+  height: 95%;
+  border-radius: 0.25rem;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+}
+.servicios .serv2 {
+  flex: 1 1 45%;
+  padding: 10px;
+}
+.servicios .serv2 img {
+  width: 98%;
+  height: 95%;
+  border-radius: 0.25rem;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.shadow-lg {
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+.serv4 {
+  padding: 20px;
+  text-align: center;
+}
+.serv4 h2 {
+  color: #401919;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+.serv4 .image-container {
+  position: relative;
+  width: 100%;
+  border-radius: 0.25rem;
+  margin-top: 15px;
+  overflow: hidden;
+}
+.serv4 .image-container .banner2 {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  display: block;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+}
+.serv4 .image-container p {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.serv3 {
+  padding: 20px;
+}
+.serv3 h2 {
+  color: #401919;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.serv3 p {
+  text-align: justify;
+  padding: 20px;
+  color: #401919;
+  background-color: #f2f2f2;
+  border-radius: 0.25rem;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .gridserv {
