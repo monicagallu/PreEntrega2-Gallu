@@ -11,7 +11,7 @@
   }
   
   .servicios {
-    display: flex;
+    @extend%flexrow;
     justify-content: space-around;
     flex-wrap: wrap;
     

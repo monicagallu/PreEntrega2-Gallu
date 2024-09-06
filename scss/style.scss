@@ -9,13 +9,11 @@
 
 // Section Styles
 .seccion1 {
-  display: flex;
-  flex-direction: row;
+  @extend%flexrow;
   padding: 10px;
 
   .seccion1banner {
-    display: flex;
-    flex-direction: column;
+    @extend%flexcolum;
     justify-content: center;
     align-items: flex-start;
     padding: 40px;

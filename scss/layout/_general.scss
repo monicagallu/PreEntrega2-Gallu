@@ -38,15 +38,13 @@
   
   .menu {
     color: $secondary-color;
-    display: flex;
+    @extend%flexrow;
     align-items: center;
     justify-content: space-between;
     padding: 0 10px;
-    flex-direction: row;
   
     ul {
-      display: flex;
-      flex-direction: row;
+      @extend%flexrow;
       list-style: none;
   
       .inline {
@@ -80,7 +78,7 @@
 footer {
     background-color: $primary-color;
     padding: 20px;
-    display: flex;
+    @extend%flexrow;
     align-items: flex-start;
     justify-content: space-around;
     flex-flow: row wrap;
