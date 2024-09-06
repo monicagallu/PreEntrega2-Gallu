@@ -68,7 +68,8 @@
       width: 100%;
       margin-top: 10px;
       ul {
-        @extend%flexcolum;
+        display: flex;
+        flex-direction: column;
         justify-content: space-between;
         padding: 8px;
         margin: 0;
@@ -82,7 +83,8 @@
       }
     }
     .seccion1 {
-      @extend%flexcolum;
+        display: flex;
+        flex-direction: column;
   
       img {
         width: 100%;
@@ -103,7 +105,8 @@
     }
   
     footer {
-      @extend%flexcolum;
+      display: flex;
+      flex-direction: column;
       align-items: flex-start;
       padding: 10px;
       div {
