@@ -12,7 +12,7 @@ main {
   flex-direction: row;
 }
 
-.seccion1 .seccion1banner {
+.seccion1banner {
   display: flex;
   flex-direction: column;
 }
@@ -125,6 +125,24 @@ footer {
   color: #401919;
 }
 
+.gridserv {
+  margin: 10px;
+}
+.gridserv .grid-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+.gridserv .grid-list li {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+}
+
 .servicios {
   justify-content: space-around;
   flex-wrap: wrap;
@@ -216,24 +234,6 @@ footer {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-}
-
-.gridserv {
-  margin: 10px;
-}
-.gridserv .grid-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: auto;
-  gap: 1rem;
-  list-style: none;
-  padding: 0;
-}
-.gridserv .grid-list li {
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 0.25rem;
-  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
 }
 
 .galeria {
@@ -418,19 +418,26 @@ footer h3, footer p, footer ul {
 .seccion1 {
   padding: 10px;
 }
-.seccion1 .seccion1banner {
+
+.seccion1banner {
   justify-content: center;
   align-items: flex-start;
   padding: 40px;
 }
-.seccion1 p {
+
+p {
   text-indent: 2rem;
 }
-.seccion1 img {
+
+img {
   width: 40%;
   height: 405px;
   margin: 5px;
   border-radius: 0.25rem;
+}
+
+.indentado {
+  text-indent: 2rem;
 }
 
 .seccion2 {
