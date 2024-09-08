@@ -346,67 +346,75 @@ footer {
   padding: 10px;
 }
 
-@media (min-width: 356px) and (max-width: 576px) {
-  #sticky {
-    position: sticky;
-    z-index: 1000;
-  }
-  h1 {
-    margin: 0;
-    font-size: 1.5rem;
-    flex-grow: 1;
-    text-align: center;
-  }
-  nav {
-    width: 100%;
-    margin-top: 10px;
-  }
-  nav ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 8px;
-    margin: 0;
-    width: 100%;
-    list-style: none;
-  }
-  nav ul li {
-    flex-grow: 1;
-    text-align: center;
-    list-style: none;
-  }
-  .seccion1 {
-    display: flex;
-    flex-direction: column;
-  }
-  .seccion1 img {
-    width: 100%;
-    margin-top: 10px;
-  }
-  .seccion2 {
-    display: grid;
-    grid-template-columns: repeat 2, 1fr;
-    grid-template-rows: repeat 6, auto;
-    gap: 10px;
-    padding: 10px;
-  }
-  .seccion2 img, .seccion2 p {
-    grid-column: span 1;
-    text-align: center;
-  }
-  footer {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px;
-  }
-  footer div {
-    margin-bottom: 15px;
-  }
-  footer h3, footer p, footer ul {
-    text-align: left;
-  }
+h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  flex-grow: 1;
+  text-align: center;
 }
+h1 #sticky {
+  position: sticky;
+  z-index: 1000;
+}
+h1 header {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f9fa;
+  padding: 10px;
+  text-align: center;
+}
+h1 nav ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 8px;
+  list-style: none;
+}
+h1 nav ul li {
+  flex-grow: 1;
+  text-align: center;
+}
+h1 nav ul a {
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.seccion1 {
+  display: flex;
+  flex-direction: column;
+}
+.seccion1 img {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.seccion2 {
+  display: grid;
+  grid-template-columns: repeat 2, 1fr;
+  grid-template-rows: repeat 6, auto;
+  gap: 10px;
+  padding: 10px;
+}
+.seccion2 img, .seccion2 p {
+  grid-column: span 1;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+}
+footer div {
+  margin-bottom: 15px;
+}
+footer h3, footer p, footer ul {
+  text-align: left;
+}
+
 .seccion1 {
   padding: 10px;
 }

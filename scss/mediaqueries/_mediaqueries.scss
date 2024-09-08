@@ -51,34 +51,43 @@
   
   
     @media (min-width: 356px) and (max-width: 576px) {
-    #sticky {
-      position: sticky;
-      z-index: 1000;
     }
     h1 {
       margin: 0;
       font-size: 1.5rem;
       flex-grow: 1;
       text-align: center;
+      #sticky {
+        position: sticky;
+        z-index: 1000;
     }
-    nav {
-      width: 100%;
-      margin-top: 10px;
-      ul {
+      header {
         display: flex;
         flex-direction: column;
+        background-color: #f8f9fa;
+        padding: 10px;
+        text-align: center;
+      }
+      
+      nav ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
         justify-content: space-between;
         padding: 8px;
-        margin: 0;
-        width: 100%;
         list-style: none;
         li {
           flex-grow: 1;
           text-align: center;
-          list-style: none;
         }
+          a {
+            color: black;
+            text-decoration: none;
+            font-size: 1rem;
+          }
       }
     }
+
     .seccion1 {
         display: flex;
         flex-direction: column;
@@ -113,5 +122,5 @@
         text-align: left;
       }
     }
-  }
+  
   
