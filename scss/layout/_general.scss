@@ -76,9 +76,9 @@
 
   // Footer
 footer {
+    display: flex;
     background-color: $primary-color;
     padding: 20px;
-    @extend%flexrow;
     align-items: flex-start;
     justify-content: space-around;
     flex-flow: row wrap;

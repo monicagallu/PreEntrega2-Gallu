@@ -11,6 +11,9 @@
 .seccion1 {
   @extend%flexrow;
   padding: 10px;
+  .indentado {
+    text-indent: 2rem;
+  }
 }
 
   .seccion1banner {
@@ -30,11 +33,6 @@
     margin: 5px;
     @include border-radius;
   }
-
-
-.indentado {
-  text-indent: 2rem;
-}
 
 .seccion2 {
   display: grid;

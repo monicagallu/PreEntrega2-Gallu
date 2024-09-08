@@ -7,7 +7,7 @@ main {
   background-color: linear-gradient to left, #f2f2f2, #9c9895;
 }
 
-.seccion1, .servicios, footer, .menu ul, .menu {
+.seccion1, .servicios, .menu ul, .menu {
   display: flex;
   flex-direction: row;
 }
@@ -88,6 +88,7 @@ a:hover {
 }
 
 footer {
+  display: flex;
   background-color: #8c603b;
   padding: 20px;
   align-items: flex-start;
@@ -418,6 +419,9 @@ footer h3, footer p, footer ul {
 .seccion1 {
   padding: 10px;
 }
+.seccion1 .indentado {
+  text-indent: 2rem;
+}
 
 .seccion1banner {
   justify-content: center;
@@ -434,10 +438,6 @@ img {
   height: 405px;
   margin: 5px;
   border-radius: 0.25rem;
-}
-
-.indentado {
-  text-indent: 2rem;
 }
 
 .seccion2 {
