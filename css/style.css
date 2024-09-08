@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+main {
+  background-color: linear-gradient to left, #f2f2f2, #9c9895;
+}
+
 .seccion1, .servicios, footer, .menu ul, .menu {
   display: flex;
   flex-direction: row;
@@ -325,9 +329,10 @@ footer {
 }
 .galeria {
   display: grid;
-  grid-template-columns: repeat 3, 1fr;
-  grid-template-rows: repeat 5, 200px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, auto);
   gap: 10px;
+  padding: 10px;
 }
 
 .servicios {
@@ -336,14 +341,12 @@ footer {
 .servicios .grid-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: auto;
-  gap: 1rem;
-  border: 10px;
-  list-style: none;
-  padding: 0;
+  grid-template-rows: repeat(6, auto);
+  gap: 10px;
+  padding: 10px;
 }
 
-@media (max-width: 576px) {
+@media (min-width: 356px) and (max-width: 576px) {
   #sticky {
     position: sticky;
     z-index: 1000;
@@ -382,8 +385,8 @@ footer {
   }
   .seccion2 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, auto);
+    grid-template-columns: repeat 2, 1fr;
+    grid-template-rows: repeat 6, auto;
     gap: 10px;
     padding: 10px;
   }

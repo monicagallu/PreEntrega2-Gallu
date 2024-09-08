@@ -50,9 +50,7 @@
     }
   
   
-  
-  
-  @media (max-width: 576px) {
+    @media (min-width: 356px) and (max-width: 576px) {
     #sticky {
       position: sticky;
       z-index: 1000;
@@ -92,8 +90,8 @@
     }
     .seccion2 {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(6, auto);
+      grid-template-columns: repeat (2, 1fr);
+      grid-template-rows: repeat (6, auto);
       gap: 10px;
       padding: 10px;
   
