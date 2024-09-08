@@ -14,6 +14,9 @@ $text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 @mixin box-shadow {
     box-shadow: $box-shadow;
   }
+main {
+  background-color: linear-gradient (left, right , #f2f2f2, #8c603b)
+}
   
 @mixin border-radius {
     border-radius: $border-radius;
