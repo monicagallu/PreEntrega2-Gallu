@@ -3,14 +3,9 @@
   padding: 0;
 }
 
-.seccion1, .servicios, footer, .menu ul, .menu {
+.servicios, .menu ul, .menu {
   display: flex;
   flex-direction: row;
-}
-
-.seccion1 .seccion1banner {
-  display: flex;
-  flex-direction: column;
 }
 
 body {
@@ -84,6 +79,7 @@ a:hover {
 }
 
 footer {
+  display: flex;
   background-color: #8c603b;
   padding: 20px;
   align-items: flex-start;
@@ -119,6 +115,24 @@ footer {
   padding: 20px;
   text-align: justify;
   color: #401919;
+}
+
+.gridserv {
+  margin: 10px;
+}
+.gridserv .grid-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+.gridserv .grid-list li {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
 }
 
 .servicios {
@@ -276,125 +290,68 @@ footer {
 }
 
 @media (max-width: 356px) {
-  #sticky {
-    position: sticky;
-    z-index: 1000;
-  }
-  header {
+  .menu {
+    color: #401919;
     display: flex;
-    flex-direction: column;
-    background-color: #f8f9fa;
-    padding: 10px;
-    text-align: center;
+    align-items: center;
   }
-  nav ul {
-    display: flex;
-    flex-direction: column;
+  ul {
+    display: block;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 8px;
     list-style: none;
-  }
-  nav ul li {
-    flex-grow: 1;
-    text-align: center;
-  }
-  nav ul a {
-    color: black;
-    text-decoration: none;
-    font-size: 1rem;
-  }
-}
-.galeria {
-  display: grid;
-  grid-template-columns: repeat 3, 1fr;
-  grid-template-rows: repeat 5, 200px;
-  gap: 10px;
-}
-
-.servicios {
-  border: 10px;
-}
-.servicios .grid-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: auto;
-  gap: 1rem;
-  border: 10px;
-  list-style: none;
-  padding: 0;
-}
-
-@media (max-width: 576px) {
-  #sticky {
-    position: sticky;
-    z-index: 1000;
-  }
-  h1 {
-    margin: 0;
-    font-size: 1.5rem;
-    flex-grow: 1;
-    text-align: center;
-  }
-  nav {
-    width: 100%;
-    margin-top: 10px;
-  }
-  nav ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 8px;
-    margin: 0;
-    width: 100%;
-    list-style: none;
-  }
-  nav ul li {
-    flex-grow: 1;
-    text-align: center;
-    list-style: none;
-  }
-  .seccion1 {
-    display: flex;
-    flex-direction: column;
-  }
-  .seccion1 img {
-    width: 100%;
-    margin-top: 10px;
-  }
-  .seccion2 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, auto);
-    gap: 10px;
-    padding: 10px;
-  }
-  .seccion2 img, .seccion2 p {
-    grid-column: span 1;
-    text-align: center;
-  }
-  footer {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px;
-  }
-  footer div {
-    margin-bottom: 15px;
-  }
-  footer h3, footer p, footer ul {
-    text-align: left;
   }
 }
 .seccion1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.seccion1 img {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+/* Grid de Servicios */
+.seccion2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+.seccion2 img, .seccion2 p {
+  grid-column: span 1;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  text-align: left;
+}
+
+footer div {
+  margin-bottom: 15px;
+}
+
+.seccion1 {
+  display: flex;
+  flex-direction: row;
   padding: 10px;
 }
 .seccion1 .seccion1banner {
   justify-content: center;
   align-items: flex-start;
+  flex-wrap: wrap;
   padding: 40px;
 }
-.seccion1 p {
+.seccion1 .indentado {
   text-indent: 2rem;
 }
 .seccion1 img {
@@ -438,7 +395,7 @@ footer {
   background-image: url(../assets/nuestroequipo.jpeg);
   background-size: cover;
   background-position: center;
-  min-height: 400px;
+  min-height: 200px;
 }
 
 .text-white {
@@ -448,7 +405,7 @@ footer {
 .container .image-container {
   position: relative;
   width: 100%;
-  border-radius: 0.25rem;
+  border-radius: 5px;
   margin-top: 5px;
   overflow: hidden;
 }
@@ -468,6 +425,15 @@ footer {
   padding: 10px;
   width: 100%;
   text-align: center;
+}
+
+footer {
+  background-color: #8c603b;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-flow: row wrap;
 }
 
 /*# sourceMappingURL=style.css.map */
