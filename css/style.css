@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  border: solid 2px red;
 }
 
 .servicios, .menu ul, .menu {
@@ -104,6 +105,56 @@ footer {
 .whatsapp-button img {
   width: 35px;
   height: 35px;
+}
+
+@media (max-width: 356px) {
+  .menu {
+    color: #401919;
+    display: flex;
+    align-items: center;
+  }
+  ul {
+    display: block;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+}
+.seccion1 {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.seccion1 img {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+/* Grid de Servicios */
+.seccion2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+.seccion2 img, .seccion2 p {
+  grid-column: span 1;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  text-align: left;
+}
+
+footer div {
+  margin-bottom: 15px;
 }
 
 .serv {
@@ -289,76 +340,25 @@ footer {
   color: #8c603b;
 }
 
-@media (max-width: 356px) {
-  .menu {
-    color: #401919;
-    display: flex;
-    align-items: center;
-  }
-  ul {
-    display: block;
-    flex-wrap: wrap;
-    list-style: none;
-  }
-}
-.seccion1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.seccion1 img {
-  width: 100%;
-  height: auto;
-  margin-top: 10px;
-}
-
-/* Grid de Servicios */
-.seccion2 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  padding: 10px;
-}
-
-.seccion2 img, .seccion2 p {
-  grid-column: span 1;
-  text-align: center;
-}
-
-/* Footer */
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 10px;
-  text-align: left;
-}
-
-footer div {
-  margin-bottom: 15px;
-}
-
 .seccion1 {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   padding: 10px;
-}
-.seccion1 .seccion1banner {
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  padding: 40px;
-}
-.seccion1 .indentado {
-  text-indent: 2rem;
+  /*.seccion1banner { 
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+  }*/
 }
 .seccion1 img {
   width: 40%;
   height: 405px;
   margin: 5px;
   border-radius: 0.25rem;
+}
+.seccion1 .indentado {
+  text-indent: 2rem;
 }
 
 .seccion2 {
