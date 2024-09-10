@@ -1,56 +1,152 @@
-// Media Queries
-@media (max-width: 356px) {
-    .menu {
-        color: $secondary-color;
-        display: flex;
-        align-items: center
-    }
-        ul {
-          display: block;
-          flex-wrap: wrap;
-          list-style: none;
-        }
-    }
-    .seccion1 {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+@media (max-width: 576px){
+  #sticky {
+      position: sticky;
+      z-index: 1000;
+  }
 
-    .seccion1 img {
-        width: 100%;
-        height: auto;
-        margin-top: 10px;
-    }
+  header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 10px;
+  }
 
-    /* Grid de Servicios */
-    .seccion2 {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        padding: 10px;
-    }
+  h1 {
+      margin: 0;
+      font-size: 1.5rem;
+      flex-grow: 1;
+      text-align: center;
+  }
 
-    .seccion2 img, .seccion2 p {
-        grid-column: span 1;
-        text-align: center;
-    }
+  nav {
+      width: 100%;
+      margin-top: 10px;
+  }
 
-    /* Footer */
-    footer {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px;
-        text-align: left;
-    }
+  nav ul {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px;
+      margin: 0;
+      width: 100%;
+      list-style: none;
+  }
 
-    footer div {
-        margin-bottom: 15px;
-    }
+  nav ul li {
+      flex-grow: 1;
+      text-align: center;
+  }
 
+  .seccion1 {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+  }
+  
+  .seccion1banner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+  }
 
+  .seccion1banner h2 {
+      font-size: 1.75rem;
+  }
 
+  .seccion1banner p {
+      margin-top: 10px;
+  }
 
-    
-    
+  .seccion1 img {
+      width: 100%;
+      margin-top: 10px;
+  }
+
+  .seccion2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(6, auto);
+      gap: 10px;
+      padding: 10px;
+  }
+
+  .seccion2 img, .seccion2 p {
+      grid-column: span 1;
+      text-align: center;
+  }
+
+  footer {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+  }
+
+  footer div {
+      margin-bottom: 15px;
+  }
+
+  footer h3, footer p, footer ul {
+      text-align: left;
+  }
+
+  .carousel {
+      z-index: 1; 
+  }
+
+  .serv {
+      padding: 10px;
+  }
+
+  .servicios {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .serv1, .serv2 {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .serv1 img, .serv2 img {
+      width: 100%;
+      height: auto; 
+  }
+
+  .serv2 {
+      border: 0;
+      margin: 0;
+  }
+
+  .image-container {
+      position: relative;
+      width: 100%; 
+      overflow: hidden;
+  }
+
+  .image-container img.banner2 {
+      width: 100%; 
+      height: 50vh; 
+      object-fit: cover; 
+  }
+
+  .image-container p {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%; 
+      padding: 10px;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.5); 
+      text-align: center;
+  }
+
+  .serv3 p {
+      padding: 10px; 
+  }
+}
