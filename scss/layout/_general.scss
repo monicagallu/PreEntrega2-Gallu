@@ -1,46 +1,48 @@
-#sticky {
-  background-color: #8c603b;
-  position: sticky;
-  top: 2px;
-  left: 0;
-  z-index: 1000;
-}
-
-.menu {
-  color: #401919;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 10px;
-}
-
-.menu ul {
-  list-style: none;
-}
-
-.menu ul .inline {
-  padding: 0 5px;
-  margin: 2px;
-  border: 1px solid black;
-  border-radius: 0.25rem;
-  background-color: #f2f2f2;
-  display: inline-block;
-  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
-}
+// layout/_general.scss
 
 #logo {
-  width: 45px;
-  height: 45px;
+  width: $tamano-logo;
+  height: $tamano-logo;
   border-radius: 50%;
   margin: 10px;
 }
 
-footer {
+.menu {
+  color: $color-primario;
   display: flex;
-  background-color: #8c603b;
-  padding: 20px;
-  align-items: flex-start;
-  justify-content: space-around;
-  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 0 10px;
+  border-radius: .25px;
+
+  a {
+    text-decoration: none;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+
+    .inline {
+      padding: 0 5px;
+      margin: 2px;
+      border: 1px solid black;
+      border-radius: $border-radius;
+      background-color: $color-fondo;
+      display: inline-block;
+      box-shadow: $box-shadow;
+    }
+  }
+}
+
+#sticky {
+  background-color: $color-secundario;
+  position: sticky;
+  left: 0;
+  top: 2px;
+  z-index: 1000;
 }
 
 .whatsapp-button {
@@ -51,14 +53,28 @@ footer {
   height: 60px;
   background-color: #25d366;
   border-radius: 50%;
-  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+  @include sombra;
+
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1000;
+
+  img {
+    width: 35px;
+    height: 35px;
+  }
 }
 
-.whatsapp-button img {
-  width: 35px;
-  height: 35px;
+footer {
+  background-color: $color-secundario;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+
+.text-white {
+  color: $color-blanco;
 }
