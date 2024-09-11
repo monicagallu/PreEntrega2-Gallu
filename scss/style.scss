@@ -1,12 +1,7 @@
 // main.scss
-@import 'style.scss';
 @import 'utilities/base';
 @import 'mediaqueries/mediaqueries';
-@import 'layout/general';
-@import 'layout/contacto';
-@import 'layout/galeria';
-@import 'layout/servicios';
-@import 'layout/sobrenosotros';
+
 
 
 
@@ -20,6 +15,7 @@ $color-blanco: #fff;
 $navbar-light-color: $color-primario;
 $navbar-light-bg: $color-secundario;  // Establece el fondo del navbar
 $navbar-light-toggler-border: $color-primario;
+
 
 $fuente-principal: "Montserrat", sans-serif;
 $fuente-secundaria: "Open Sans", sans-serif;
@@ -131,39 +127,23 @@ a {
   color: black; 
 }
 
-/*menu hamburguesa*/
 .navbar {
-  background-color: $color-secundario; // Fondo del navbar
-  padding: 10px;
-  
-  .navbar-brand {
-    display: flex;
-    align-items: center;
-
-    img {
-      width: 45px;
-      height: 45px;
-      border-radius: 50%;
-    }
-
-    h1 {
-      font-size: 1.5rem;
-      color: $color-fondo; // Color de texto blanco
-      margin-left: 10px;
-    }
+  background-color: $color-fondo;
+  .navbar-brand img {
+    width: $tamano-logo;
+    height: $tamano-logo;
+    border-radius: 50%;
   }
-
   .nav-link {
-    color: $color-fondo !important; // Color de texto blanco
+    color: $color-primario;
     &:hover {
-      color: darken($color-fondo, 20%) !important;
+      color: $color-secundario;
     }
   }
-
   .navbar-toggler {
-    border-color: $color-fondo; // Color del borde del botón de hamburguesa
+    border-color: $color-primario;
     .navbar-toggler-icon {
-      background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='#f2f2f2' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+      background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='#401919' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
     }
   }
 }
@@ -261,7 +241,7 @@ main .serv {
     text-align: center;
     margin: 20px;
     border-radius: 10px;
-    img { /*cambiar img 1 por 182*273 */
+    img { 
       width: 50%;
       border-radius: 10px;
       margin-top: 10px;
@@ -363,16 +343,16 @@ main .serv {
   background-image: url("../assets/nuestroequipo.jpeg");
   background-size: cover;
   background-position: center;
-  min-height: 400px; /* Puedes ajustar la altura según tus necesidades */
+  min-height: 400px; 
   display: flex;
   align-items: center;
-  justify-content: center; /* Centra el contenido vertical y horizontalmente */
-  padding: 20px; /* Ajusta el espacio alrededor del texto */
-  position: relative; /* Para poder posicionar el contenido sobre la imagen */
+  justify-content: center; 
+  padding: 20px; 
+  position: relative; 
 
   .text-white {
     color: $color-blanco;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Agrega sombra al texto para mejor visibilidad */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); 
   }
 }
 
@@ -426,44 +406,6 @@ footer {
 }
 
 @media (max-width: 576px) {
-  #sticky {
-    position: sticky;
-    z-index: 1000;
-  }
-
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-  }
-
-  h1 {
-    margin: 0;
-    font-size: 1.5rem;
-    flex-grow: 1;
-    text-align: center;
-  }
-
-  nav {
-    width: 100%;
-    margin-top: 10px;
-
-    ul {
-      display: flex;
-      justify-content: space-between;
-      padding: 8px;
-      margin: 0;
-      width: 100%;
-      list-style: none;
-
-      li {
-        flex-grow: 1;
-        text-align: center;
-      }
-    }
-  }
 
   .seccion1, .seccion1banner {
     flex-direction: column;
@@ -543,6 +485,18 @@ footer {
 
   .serv3 p {
     padding: 10px;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar-collapse {
+    width: 100%;
+  }
+
+  .nav-link {
+    text-align: center;
   }
 }
 

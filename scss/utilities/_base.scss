@@ -1,21 +1,31 @@
-// utilities/_base.scss
-// Variables
+* {
+  margin: 0;
+  padding: 0;
+}
+
 $color-primario: #401919;
 $color-secundario: #8c603b;
 $color-fondo: #f2f2f2;
 $color-texto: #401a19;
 $color-sombra: rgba(0, 0, 0, 0.4);
 $color-blanco: #fff;
-
 $fuente-principal: "Montserrat", sans-serif;
 $fuente-secundaria: "Open Sans", sans-serif;
-
 $tamano-logo: 45px;
 $border-radius: .25rem;
 $box-shadow: 3px 3px 6px $color-sombra;
 $padding-general: 10px;
 
-// Mixins
+@font-face {
+  font-family: "Montserrat";
+  src: url(../assets/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "open_sans";
+  src: url(../assets/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf);
+}
+
 @mixin sombra($color: $color-sombra) {
   box-shadow: 0 2px 10px $color;
 }
@@ -42,14 +52,9 @@ $padding-general: 10px;
   }
 }
 
-// Estilos generales
-* {
-  margin: 0;
-  padding: 0;
-}
-
 body {
   background-color: $color-fondo;
+  background: linear-gradient(90deg, #ffffff, #d2d2d2);
   color: $color-texto;
   @include fuente-principal;
 }
@@ -57,4 +62,19 @@ body {
 h1, h2, h3 {
   @include fuente-principal;
   @include texto-sombra;
+}
+
+h1 {
+  font-weight: 700;
+  text-align: center;
+  padding-top: 15px;
+}
+
+h2 {
+  text-align: center;
+  padding: 15px 0;
+}
+
+h3 {
+  font-weight: bold;
 }

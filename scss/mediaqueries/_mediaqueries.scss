@@ -1,192 +1,173 @@
-/* Móviles */
-  @media (max-width: 356px) {
-    // Header y Menu
-    header {
+@media (max-width: 356px){
+  #sticky {
+    position: sticky;
+    z-index: 1000;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  nav {
+    width: 100%;
+    margin-top: 10px;
+    ul {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 10px;
+      justify-content: space-between;
+      padding: 8px;
+      margin: 0;
       width: 100%;
-    }
-  
-    .menu {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-  
-      ul {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        
-        .inline {
-          display: block;
-          width: 100%;
-          text-align: center;
-          padding: 5px 0;
-        }
+      list-style: none;
+      li {
+        flex-grow: 1;
+        text-align: center;
       }
     }
-
-     // Botón de menú hamburguesa
-    /*.hamburguesa {
-      display: block;
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      width: 30px;
-      height: 30px;
-      background-color: $color-primario;
-      border: none;
-      cursor: pointer;
-
-      &:before, &:after {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 3px;
-        background-color: $color-blanco;
-        margin: 5px 0;
-      }
-    }*/
-    .hamburguesa {
-      display: block; // Mostrar el botón
   }
-
-  .menu ul {
-      display: none; // Ocultar el menú por defecto
-  }
-
-  .menu ul.active {
-      display: flex; // Mostrar el menú al hacer clic
-      flex-direction: column;
+  
+  ul {
+    display: none;
+    &.active { 
       align-items: center;
       width: 100%;
       padding: 0;
       list-style: none;
-      position: absolute;
-      top: 50px; // Debajo del header
-      left: 0;
-      background-color: $color-fondo;
-      z-index: 1000;
-  }
-
-    ul {
-      display: none; // Ocultar el menú por defecto
-
-      &.active { // Mostrar cuando está activo
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+      li {
         width: 100%;
-        padding: 0;
-        list-style: none;
-
-        li {
-          width: 100%;
-          text-align: center;
-          margin-bottom: 5px;
-        }
-      }
-    }
-  }
-  
-    .seccion1, .seccion1banner {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: $padding-general;
-  
-      img {
-        width: 100%;
-        margin-top: 10px;
-      }
-    }
-  
-    .seccion2 {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 5px;
-      padding: $padding-general;
-  
-      img, p {
-        grid-column: span 1;
         text-align: center;
-        width: 100%;
+        text-decoration: line-through;
+        margin-bottom: 5px;
       }
     }
-  
-    footer {
-      flex-direction: column;
-      align-items: flex-start;
-      padding: $padding-general;
-  
-      div {
-        margin-bottom: 10px;
-      }
-  
-      h3, p, ul {
-        text-align: left;
-      }
-    }
-  
-    .whatsapp-button {
-      width: 50px;
-      height: 50px;
-      bottom: 10px;
-      right: 10px;
-  
-      img {
-        width: 25px;
-        height: 25px;
-      }
-    }
-  
-    .image-container {
+  }
+
+  .seccion1, .seccion1banner {
+    flex-direction: column;
+    padding: $padding-general;
+    text-align: center;
+    img {
       width: 100%;
-      overflow: hidden;
-  
-      .banner2 {
-        width: 100%;
-        height: 200px; // Ajusta según sea necesario
-        object-fit: cover;
-      }
-  
-      p {
-        width: 100%;
-        padding: 5px;
-        color: white;
-        background-color: rgba(0, 0, 0, 0.5);
-        text-align: center;
-      }
+      margin-top: 10px;
     }
+  }
   
-    .serv3 p {
+  .seccion2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    padding: $padding-general;
+    img, p {
+      grid-column: span 1;
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  .whatsapp-button {
+    width: 50px;
+    height: 50px;
+    bottom: 10px;
+    right: 10px;
+    img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  .image-container {
+    width: 100%;
+    overflow: hidden;
+    .banner2 {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    p {
+      width: 100%;
       padding: 5px;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.5);
+      text-align: center;
     }
-  
-    // Lista de servicios
+  }
+
+  .serv3 p {
+    padding: 5px;
+  }
+
   .servicios {
-    grid-template-columns: repeat(2, 1fr); // Cambiar a dos columnas
-    grid-template-rows: repeat(6, auto);
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     padding: $padding-general;
   }
 
+  .gridserv .grid-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+}
+
   .integrales p {
     max-width: 100%;
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.8); // Fondo blanco con opacidad para mejorar visibilidad
+    background-color: rgba(255, 255, 255, 0.8);
   }
 
-  // Ajustar galería a 2 columnas
   .galeria {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(8, 200px);
+    grid-template-rows: repeat(7, auto);
     gap: 10px;
+    grid-template-areas:
+        "item1 item1"
+        "item2 item3"
+        "item4 item5"
+        "item6 item7"
+        "item8 item5"
+        "item9 item9"
+        "item10 item10";
     margin: 10px;
+}
+}
+
+@media (max-width: 576px) {
+
+  .seccion1, .seccion1banner {
+    flex-direction: column;
+    padding: $padding-general;
+    text-align: center;
+  }
+
+  .seccion1 img {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .seccion2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, auto);
+    gap: 10px;
+    padding: $padding-general;
+
+    img, p {
+      grid-column: span 1;
+      text-align: center;
+    }
   }
 
   footer {
@@ -195,7 +176,7 @@
     padding: $padding-general;
 
     div {
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
 
     h3, p, ul {
@@ -203,147 +184,57 @@
     }
   }
 
-  
-  
-/*tablets*/ 
-@media (min-width: 577px) and (max-width: 768px) {
-    #sticky {
-      position: sticky;
-      z-index: 1000;
-    }
-  
-    header {
-      display: flex;
+  .serv {
+    padding: $padding-general;
+
+    .servicios {
       flex-direction: column;
       align-items: center;
-      text-align: center;
-      padding: 10px;
     }
-  
-    h1 {
-      margin: 0;
-      font-size: 1.5rem;
-      flex-grow: 1;
-      text-align: center;
-    }
-  
-    .menu {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-  
-      ul {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        padding: 8px 0;
-        list-style: none;
-  
-        li {
-          width: 100%;
-          text-align: center;
-          margin-bottom: 5px;
-        }
-      }
-    }
-  
-    .seccion1, .seccion1banner {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: $padding-general;
-    }
-  
-    .seccion1 img {
+
+    .serv1, .serv2 {
       width: 100%;
-      margin-top: 10px;
-    }
-  
-    .seccion2 {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(6, auto);
-      gap: 10px;
-      padding: $padding-general;
-  
-      img, p {
-        grid-column: span 1;
-        text-align: center;
-      }
-    }
-  
-    footer {
-      flex-direction: column;
-      align-items: flex-start;
-      padding: $padding-general;
-  
-      div {
-        margin-bottom: 15px;
-      }
-  
-      h3, p, ul {
-        text-align: left;
-      }
-    }
-  
-    .serv {
-      padding: $padding-general;
-  
-      .servicios {
-        flex-direction: column;
-        align-items: center;
-      }
-  
-      .serv1, .serv2 {
+      margin-bottom: 20px;
+
+      img {
         width: 100%;
-        margin-bottom: 20px;
-  
-        img {
-          width: 100%;
-          height: auto;
-        }
+        height: auto;
       }
-    }
-  
-    .image-container {
-      width: 100%;
-      overflow: hidden;
-  
-      .banner2 {
-        width: 100%;
-        height: 50vh;
-        object-fit: cover;
-      }
-  
-      p {
-        width: 100%;
-        padding: 10px;
-        color: white;
-        background-color: rgba(0, 0, 0, 0.5);
-        text-align: center;
-      }
-    }
-  
-    .serv3 p {
-      padding: 10px;
     }
   }
 
-  @media (max-width: 576px) {
-    .navbar {
-      flex-direction: column;
-      align-items: flex-start;
-      .navbar-brand {
-        justify-content: center;
-      }
-    }
-  
-    .navbar-collapse {
+  .image-container {
+    width: 100%;
+    overflow: hidden;
+
+    img.banner2 {
       width: 100%;
+      height: 50vh;
+      object-fit: cover;
     }
-  
-    .nav-link {
+
+    p {
+      width: 100%;
+      padding: 10px;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.5);
       text-align: center;
     }
   }
-  
+
+  .serv3 p {
+    padding: 10px;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar-collapse {
+    width: 100%;
+  }
+
+  .nav-link {
+    text-align: center;
+  }
+}
