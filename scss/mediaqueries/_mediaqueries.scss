@@ -7,12 +7,14 @@
       align-items: center;
       text-align: center;
       padding: 10px;
+      width: 100%;
     }
   
     .menu {
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      width: 100%;
   
       ul {
         flex-direction: column;
@@ -27,6 +29,69 @@
         }
       }
     }
+
+     // Botón de menú hamburguesa
+    /*.hamburguesa {
+      display: block;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 30px;
+      height: 30px;
+      background-color: $color-primario;
+      border: none;
+      cursor: pointer;
+
+      &:before, &:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: $color-blanco;
+        margin: 5px 0;
+      }
+    }*/
+    .hamburguesa {
+      display: block; // Mostrar el botón
+  }
+
+  .menu ul {
+      display: none; // Ocultar el menú por defecto
+  }
+
+  .menu ul.active {
+      display: flex; // Mostrar el menú al hacer clic
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      padding: 0;
+      list-style: none;
+      position: absolute;
+      top: 50px; // Debajo del header
+      left: 0;
+      background-color: $color-fondo;
+      z-index: 1000;
+  }
+
+    ul {
+      display: none; // Ocultar el menú por defecto
+
+      &.active { // Mostrar cuando está activo
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        list-style: none;
+
+        li {
+          width: 100%;
+          text-align: center;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
   
     .seccion1, .seccion1banner {
       flex-direction: column;
@@ -101,7 +166,44 @@
     .serv3 p {
       padding: 5px;
     }
+  
+    // Lista de servicios
+  .servicios {
+    grid-template-columns: repeat(2, 1fr); // Cambiar a dos columnas
+    grid-template-rows: repeat(6, auto);
+    gap: 10px;
+    padding: $padding-general;
   }
+
+  .integrales p {
+    max-width: 100%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8); // Fondo blanco con opacidad para mejorar visibilidad
+  }
+
+  // Ajustar galería a 2 columnas
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 200px);
+    gap: 10px;
+    margin: 10px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: $padding-general;
+
+    div {
+      margin-bottom: 10px;
+    }
+
+    h3, p, ul {
+      text-align: left;
+    }
+  }
+
+  
   
 /*tablets*/ 
 @media (min-width: 577px) and (max-width: 768px) {

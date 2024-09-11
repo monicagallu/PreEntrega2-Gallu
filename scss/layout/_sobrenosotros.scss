@@ -20,5 +20,12 @@
       padding: 40px;
     }
   }
+  // Corregir imagen en sección de "Nuestro equipo"
+  .carousel .bg-image {
+    background-image: url(../assets/nuestroequipo.jpeg);
+    background-size: cover;
+    background-position: center;
+    min-height: 200px; // Ajustar el tamaño según sea necesario
+  }
   
 
