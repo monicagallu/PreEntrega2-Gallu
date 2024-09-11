@@ -1,4 +1,5 @@
 // main.scss
+@import 'style.scss';
 @import 'utilities/base';
 @import 'mediaqueries/mediaqueries';
 @import 'layout/general';
@@ -16,6 +17,9 @@ $color-fondo: #f2f2f2;
 $color-texto: #401a19;
 $color-sombra: rgba(0, 0, 0, 0.4);
 $color-blanco: #fff;
+$navbar-light-color: $color-primario;
+$navbar-light-bg: $color-secundario;  // Establece el fondo del navbar
+$navbar-light-toggler-border: $color-primario;
 
 $fuente-principal: "Montserrat", sans-serif;
 $fuente-secundaria: "Open Sans", sans-serif;
@@ -123,22 +127,44 @@ h3 {
   }
 }
 
-.hamburguesa {
-  display: none; // Por defecto, oculto
-  position: relative;
-  width: 30px;
-  height: 30px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  z-index: 1001;
+a {
+  color: black; 
+}
 
-  span {
-      display: block;
-      width: 100%;
-      height: 3px;
-      background-color: $color-primario;
-      margin: 5px 0;
+/*menu hamburguesa*/
+.navbar {
+  background-color: $color-secundario; // Fondo del navbar
+  padding: 10px;
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      color: $color-fondo; // Color de texto blanco
+      margin-left: 10px;
+    }
+  }
+
+  .nav-link {
+    color: $color-fondo !important; // Color de texto blanco
+    &:hover {
+      color: darken($color-fondo, 20%) !important;
+    }
+  }
+
+  .navbar-toggler {
+    border-color: $color-fondo; // Color del borde del botón de hamburguesa
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='#f2f2f2' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+    }
   }
 }
 
@@ -519,3 +545,5 @@ footer {
     padding: 10px;
   }
 }
+
+
