@@ -1,3 +1,5 @@
+@import 'mediaqueries';
+
 // Variables
 $color-primario: #401919;
 $color-secundario: #8c603b;
@@ -10,7 +12,6 @@ $fuente-secundaria: "Open Sans", sans-serif;
 $tamano-logo: 45px;
 $border-radius: .25rem;
 $box-shadow: 3px 3px 6px $color-sombra;
-$padding-general: 10px;
 
 * {
   margin: 0;
@@ -139,7 +140,7 @@ a {
 .seccion1 {
   display: flex;
   flex-direction: row;
-  padding: $padding-general;
+  padding: 10px;
 
   img {
     width: 40%;
@@ -337,7 +338,6 @@ footer {
     gap: 1rem;
     list-style: none;
     padding: 0;
-
     li {
       padding: 0.5rem;
       border: 1px solid #ccc;
@@ -364,11 +364,13 @@ footer {
   margin: 10px;
 }
 
-@media (max-width: 576px) {
+.navbar-brand {
 
+}
+@media (max-width: 576px) {
   .seccion1, .seccion1banner {
     flex-direction: column;
-    padding: $padding-general;
+    padding: 10px;
     text-align: center;
   }
 
@@ -382,8 +384,7 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, auto);
     gap: 10px;
-    padding: $padding-general;
-
+    padding: 10px;
     img, p {
       grid-column: span 1;
       text-align: center;
@@ -393,29 +394,24 @@ footer {
   footer {
     flex-direction: column;
     align-items: flex-start;
-    padding: $padding-general;
-
+    padding: 10px;
     div {
       margin-bottom: 15px;
     }
-
     h3, p, ul {
       text-align: left;
     }
   }
 
   .serv {
-    padding: $padding-general;
-
+    padding: 10px;
     .servicios {
       flex-direction: column;
       align-items: center;
     }
-
     .serv1, .serv2 {
       width: 100%;
       margin-bottom: 20px;
-
       img {
         width: 100%;
         height: auto;
@@ -426,13 +422,11 @@ footer {
   .image-container {
     width: 100%;
     overflow: hidden;
-
     img.banner2 {
       width: 100%;
       height: 50vh;
       object-fit: cover;
     }
-
     p {
       width: 100%;
       padding: 10px;
@@ -458,7 +452,104 @@ footer {
     text-align: center;
   }
 }
-@media (max-width: 356px){
+
+@media (max-width: 576px) {
+  .seccion1, .seccion1banner {
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .seccion1 img {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .seccion2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, auto);
+    gap: 10px;
+    padding: 10px;
+    img, p {
+      grid-column: span 1;
+      text-align: center;
+    }
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    div {
+      margin-bottom: 15px;
+    }
+    h3, p, ul {
+      text-align: left;
+    }
+  }
+
+  .serv {
+    padding: 10px;
+    .servicios {
+      flex-direction: column;
+      align-items: center;
+    }
+    .serv1, .serv2 {
+      width: 100%;
+      margin-bottom: 20px;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .image-container {
+    width: 100%;
+    overflow: hidden;
+    img.banner2 {
+      width: 100%;
+      height: 50vh;
+      object-fit: cover;
+    }
+    p {
+      width: 100%;
+      padding: 10px;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+  }
+  
+  .gridserv .grid-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: auto;
+      gap: 1rem;
+      list-style: none;
+      padding: 0;
+    }
+
+  .serv3 p {
+    padding: 10px;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar-collapse {
+    width: 100%;
+  }
+
+  .nav-link {
+    text-align: center;
+  }
+}
+
+  
+@media (max-width: 356px) {
   #sticky {
     position: sticky;
     z-index: 1000;
@@ -515,7 +606,7 @@ footer {
 
   .seccion1, .seccion1banner {
     flex-direction: column;
-    padding: $padding-general;
+    padding: 10px;
     text-align: center;
     img {
       width: 100%;
@@ -527,7 +618,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
-    padding: $padding-general;
+    padding: 10px;
     img, p {
       grid-column: span 1;
       text-align: center;
@@ -570,7 +661,7 @@ footer {
   .servicios {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-    padding: $padding-general;
+    padding: 10px;
   }
 
   .gridserv .grid-list {
@@ -580,123 +671,13 @@ footer {
     gap: 1rem;
     list-style: none;
     padding: 0;
-}
+  }
 
   .integrales p {
     max-width: 100%;
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.8);
   }
-
-  .galeria {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(7, auto);
-    gap: 10px;
-    grid-template-areas:
-        "item1 item1"
-        "item2 item3"
-        "item4 item5"
-        "item6 item7"
-        "item8 item5"
-        "item9 item9"
-        "item10 item10";
-    margin: 10px;
 }
-}
-
-@media (max-width: 576px) {
-
-  .seccion1, .seccion1banner {
-    flex-direction: column;
-    padding: $padding-general;
-    text-align: center;
-  }
-
-  .seccion1 img {
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  .seccion2 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, auto);
-    gap: 10px;
-    padding: $padding-general;
-
-    img, p {
-      grid-column: span 1;
-      text-align: center;
-    }
-  }
-
-  footer {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: $padding-general;
-
-    div {
-      margin-bottom: 15px;
-    }
-
-    h3, p, ul {
-      text-align: left;
-    }
-  }
-
-  .serv {
-    padding: $padding-general;
-
-    .servicios {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .serv1, .serv2 {
-      width: 100%;
-      margin-bottom: 20px;
-
-      img {
-        width: 100%;
-        height: auto;
-      }
-    }
-  }
-
-  .image-container {
-    width: 100%;
-    overflow: hidden;
-
-    img.banner2 {
-      width: 100%;
-      height: 50vh;
-      object-fit: cover;
-    }
-
-    p {
-      width: 100%;
-      padding: 10px;
-      color: white;
-      background-color: rgba(0, 0, 0, 0.5);
-      text-align: center;
-    }
-  }
-
-  .serv3 p {
-    padding: 10px;
-  }
-
-  .navbar {
-    flex-direction: column;
-  }
-
-  .navbar-collapse {
-    width: 100%;
-  }
-
-  .nav-link {
-    text-align: center;
-  }
-}
-
-
+ 
+ 
