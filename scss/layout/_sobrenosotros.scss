@@ -1,0 +1,16 @@
+.bg-image {
+    background-image: url("../assets/nuestroequipo.jpeg");
+    background-size: cover;
+    background-position: center;
+    min-height: 400px; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 20px; 
+    position: relative; 
+  
+    .text-white {
+      color: $color-blanco;
+      text-shadow: 1px 1px 2px $color-sombra; 
+    }
+  }
