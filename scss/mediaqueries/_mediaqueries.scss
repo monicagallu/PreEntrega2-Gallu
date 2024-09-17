@@ -1,5 +1,45 @@
+ /*tablets*/ 
+ @media (max-width: 576px) {
+  #sticky {
+    position: sticky;
+    z-index: 1000;
+  }
 
-  @media (max-width: 320px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  .serv {
+    padding: 10px;
+    .servicios {
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+    }
+    .serv1, .serv2 {
+      width: 100%;
+      margin-bottom: 20px;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+ }
+
+
+
+ @media (max-width: 320px) {
     #sticky {
       position: sticky;
       z-index: 1000;
@@ -66,7 +106,7 @@
     .servicios {
       grid-template-columns: repeat(2, 1fr);
       gap: 10px;
-      padding: 10px;
+      justify-items: center;
     }
   
     .gridserv .grid-list {
@@ -83,19 +123,6 @@
       padding: 10px;
       background-color: rgba(255, 255, 255, 0.8);
     }
-  
-    .galeria {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(7, auto);
-      gap: 10px;
-      grid-template-areas:
-          "item1 item1"
-          "item2 item3"
-          "item4 item5"
-          "item6 item7"
-          "item8 item5"
-          "item9 item9"
-          "item10 item10";
-      margin: 10px;
-    }
   }
+
+ 
