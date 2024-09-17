@@ -13,3 +13,39 @@ $fuente-principal: "Montserrat", sans-serif;
 $fuente-secundaria: "Open Sans", sans-serif;
 $border-radius: .25rem;
 $box-shadow: 3px 3px 6px $color-sombra;
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../assets/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "open_sans";
+  src: url(../assets/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf);
+}
+
+
+@mixin sombra($color: $color-sombra) {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+@mixin texto-sombra {
+  text-shadow: 2px 2px 4px $color-sombra;
+}
+
+@mixin fuente-principal {
+  font-family: $fuente-principal;
+  color: $color-primario;
+}
+
+@mixin boton {
+  back-align: center;
+  bordground-color: $color-secundario;
+  texter-color: $color-primario;
+  color: $color-primario;
+  &:hover {
+    background-color: $color-primario;
+    border-color: $color-secundario;
+    color: $color-secundario;
+  }
+}
