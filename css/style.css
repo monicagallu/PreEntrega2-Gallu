@@ -69,8 +69,9 @@ a {
   background-color: #8c603b;
   position: sticky;
   left: 0;
-  top: 2px;
+  top: 1px;
   z-index: 1000;
+  border-radius: 5px;
 }
 
 .whatsapp-button {
@@ -307,7 +308,8 @@ footer a {
 }
 .seccion2 p {
   display: inline-block;
-  color: #401919;
+  color: whitesmoke;
+  font-weight: 500;
   font-size: x-large;
   padding: 0 5px;
   margin: 2px;
