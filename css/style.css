@@ -124,10 +124,10 @@ footer a {
   .navbar {
     flex-direction: column;
   }
-  .navbar-colapse {
+  .navbar .navbar-colapse {
     width: 100%;
   }
-  .nav-link {
+  .navbar .nav-link {
     text-align: center;
   }
   .serv {
