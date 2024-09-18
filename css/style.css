@@ -1,17 +1,410 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 3 | @import 'mediaqueries/mediaqueries';
- *   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   scss\style.scss 3:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 3 \2502  @import 'mediaqueries/mediaqueries';\d\a   \2502          ^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\style.scss 3:9  root stylesheet";
+* {
+  margin: 0;
+  padding: 0;
 }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../assets/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "open_sans";
+  src: url(../assets/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf);
+}
+body {
+  background-color: #f2f2f2;
+  background: linear-gradient(90deg, white, #d2d2d2);
+  color: #401a19;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: "Montserrat";
+  src: url(../assets/Montserrat/Montserrat-VariableFont_wght.ttf);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4) s;
+}
+
+h1 {
+  font-weight: 700;
+  text-align: center;
+  padding-top: 15px;
+}
+
+h2 {
+  text-align: center;
+  padding: 15px;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+#logo {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+a {
+  color: black;
+}
+
+.navbar .navbar-nav .nav-link {
+  padding: 10px 20px;
+  background-color: #8c603b;
+  border: 1px solid #401919;
+  color: white;
+  border-radius: 5px;
+  margin: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  background-color: white;
+  color: #8c603b;
+}
+
+#sticky {
+  background-color: #8c603b;
+  position: sticky;
+  left: 0;
+  top: 1px;
+  z-index: 1000;
+  border-radius: 5px;
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.whatsapp-button img {
+  width: 35px;
+  height: 35px;
+}
+
+footer {
+  background-color: #8c603b;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+footer a {
+  color: black;
+}
+
+@media (max-width: 576px) {
+  #sticky {
+    position: sticky;
+    z-index: 1000;
+    text-align: center;
+    padding: 10px;
+  }
+  h1 {
+    margin: 0;
+    text-align: center;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar-colapse {
+    width: 100%;
+  }
+  .nav-link {
+    text-align: center;
+  }
+  .serv {
+    padding: 10px;
+  }
+  .serv .servicios {
+    text-align: center;
+  }
+}
+.serv3 p {
+  padding: 10px;
+}
+
+.image-container {
+  width: 100%;
+  overflow: hidden;
+}
+.image-container img .banner2 {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+.image-container p {
+  width: 100%;
+  padding: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.grid-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  gap: 1rem;
+  list-style: none;
+  padding: 0%;
+}
+
+.seccion2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, auto);
+  gap: 10px;
+  padding: 10px;
+}
+
+img, p {
+  grid-column: 1;
+  text-align: center;
+}
+
+footer {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+}
+footer div {
+  margin-bottom: 15px;
+}
+footer h3, footer p, footer ul {
+  text-align: left;
+}
+
+@media (max-width: 320px) {
+  #sticky {
+    position: sticky;
+    z-index: 1000;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+  }
+  h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    flex-grow: 1;
+    text-align: center;
+  }
+}
+.seccion1 {
+  display: flex;
+  padding: 10px;
+}
+.seccion1 img {
+  width: 40%;
+  height: 405px;
+  margin: 5px;
+  border-radius: 20px;
+}
+.seccion1 .seccion1banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+}
+
+.seccion2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+}
+.seccion2 img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.seccion2 p {
+  display: inline-block;
+  color: whitesmoke;
+  font-weight: 500;
+  font-size: x-large;
+  padding: 0 5px;
+  margin: 2px;
+  border: 1px solid black;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+  border-radius: 0.25rem;
+  background-color: #8c603b;
+}
+
+.carousel {
+  z-index: 1;
+}
+
+.bg-image {
+  background-image: url("../assets/nuestroequipo.jpeg");
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+}
+.bg-image .text-white {
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.serv {
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+  max-width: 1200px;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 5px;
+  overflow: hidden;
+}
+.image-container .banner2 {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  display: block;
+}
+.image-container p {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.servicios {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 20px;
+}
+.servicios .serv1, .servicios .serv2 {
+  background-color: #f0f0f0;
+  text-align: center;
+  margin: 20px;
+  border-radius: 10px;
+}
+.servicios .serv1 img, .servicios .serv2 img {
+  width: 50%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.servicios .serv1 .serv3, .servicios .serv1 .serv4, .servicios .serv2 .serv3, .servicios .serv2 .serv4 {
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.gridserv {
+  margin: 10px;
+}
+.gridserv .grid-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+.gridserv .grid-list li {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+.container-fluid {
+  padding: 10px;
+  margin: 10px;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 200px);
+  gap: 10px;
+  grid-template-areas: "item1 item1 item2 item3" "item1 item1 item4 item5" "item6 item7 item8 item5" "item9 item9 item10 item10";
+  margin: 20px;
+}
+.galeria .item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.galeria .item1 {
+  grid-area: item1;
+}
+.galeria .item2 {
+  grid-area: item2;
+}
+.galeria .item3 {
+  grid-area: item3;
+}
+.galeria .item4 {
+  grid-area: item4;
+}
+.galeria .item5 {
+  grid-area: item5;
+}
+.galeria .item6 {
+  grid-area: item6;
+}
+.galeria .item7 {
+  grid-area: item7;
+}
+.galeria .item8 {
+  grid-area: item8;
+}
+.galeria .item9 {
+  grid-area: item9;
+}
+.galeria .item10 {
+  grid-area: item10;
+}
+
+.btn {
+  background-color: #8c603b;
+  text-align: center;
+  border-color: #401919;
+  color: #401919;
+}
+.btn :hover {
+  background-color: #401919;
+  border-color: #8c603b;
+  color: #8c603b;
+}
+
+/*# sourceMappingURL=style.css.map */
