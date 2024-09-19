@@ -86,9 +86,9 @@ footer {
   background-color: $color-secundario;
   padding: 20px;
   display: flex;
+  flex-flow: row wrap;
   align-items: flex-start;
   justify-content: space-around;
-  flex-flow: row wrap;
   a {
     color: black; 
   }
