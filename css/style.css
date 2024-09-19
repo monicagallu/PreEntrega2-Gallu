@@ -331,6 +331,15 @@ footer a {
   .nav-link {
     text-align: center;
   }
+  .seccion1, .seccion1banner {
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+  }
+  .seccion1 img, .seccion1banner img {
+    width: 100%;
+    margin-top: 10px;
+  }
   .serv {
     padding: 10px;
   }
@@ -345,7 +354,6 @@ footer a {
   }
   .serv .serv1 img, .serv .serv2 img {
     width: 100%;
-    height: auto;
   }
   .serv3 p {
     padding: 10px;
@@ -383,10 +391,17 @@ footer a {
     grid-column: 1;
     text-align: center;
   }
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 200px);
+    grid-template-areas: "item1 item2" "item3 item4" "item5 item6" "item7 item8" "item9 item10";
+  }
   footer {
     align-items: flex-start;
     justify-content: space-between;
+    align-content: center;
     padding: 10px;
+    flex-direction: column;
   }
   footer footer div {
     margin-bottom: 15px;
@@ -469,6 +484,11 @@ footer a {
     max-width: 100%;
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.8);
+  }
+  .galeria {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, 200px);
+    grid-template-areas: "item1" "item2" "item3" "item4" "item5" "item6" "item7" "item8" "item9" "item10";
   }
 }
 
