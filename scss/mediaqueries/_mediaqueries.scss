@@ -1,3 +1,26 @@
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .seccion1, .seccion1banner {
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+    img {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+
+  footer {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+}
+
 @media (max-width: 576px) {
   #sticky {
     position: sticky;
@@ -200,6 +223,11 @@
       gap: 1rem;
       list-style: none;
       padding: 0;
+  }
+
+  .image-container p {
+    font-size: 0.750rem;
+    text-align: justify;
   }
 
   .integrales p {

@@ -311,6 +311,26 @@ footer a {
   color: #8c603b;
 }
 
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 15px;
+  }
+  .seccion1, .seccion1banner {
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+  }
+  .seccion1 img, .seccion1banner img {
+    width: 100%;
+    margin-top: 10px;
+  }
+  footer {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+}
 @media (max-width: 576px) {
   #sticky {
     position: sticky;
@@ -485,6 +505,10 @@ footer a {
     gap: 1rem;
     list-style: none;
     padding: 0;
+  }
+  .image-container p {
+    font-size: 0.75rem;
+    text-align: justify;
   }
   .integrales p {
     max-width: 100%;
