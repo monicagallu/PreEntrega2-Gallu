@@ -1,11 +1,11 @@
 .btn {
-    background-color: $color-secundario;
-    text-align: center;
-    border-color: $color-primario;
-    color: $color-primario;
-      :hover {
-        background-color: $color-primario;
-        border-color: $color-secundario;
-        color: $color-secundario;
-      }
-  }
+  background-color: $color-secundario;
+  text-align: center;
+  border-color: $color-primario;
+  color: $color-primario;
+    &:hover {
+      background-color: $color-primario;
+      border-color: $color-secundario;
+      color: $color-secundario;
+    }
+}

@@ -32,7 +32,8 @@ h1 {
 
 h2 {
   text-align: center;
-  padding: 15px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 h3 {
@@ -215,9 +216,9 @@ footer a {
   border-radius: 10px;
 }
 .servicios .serv1 img, .servicios .serv2 img {
-  width: 50%;
-  border-radius: 10px;
-  margin-top: 10px;
+  width: 75%;
+  height: 87%;
+  border-radius: 8px;
 }
 .servicios .serv1 .serv3, .servicios .serv1 .serv4, .servicios .serv2 .serv3, .servicios .serv2 .serv4 {
   border-radius: 10px;
@@ -293,13 +294,18 @@ footer a {
   grid-area: item10;
 }
 
+.galeria1 h2 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .btn {
   background-color: #8c603b;
   text-align: center;
   border-color: #401919;
   color: #401919;
 }
-.btn :hover {
+.btn:hover {
   background-color: #401919;
   border-color: #8c603b;
   color: #8c603b;
