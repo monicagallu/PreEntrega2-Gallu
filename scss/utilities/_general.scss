@@ -9,6 +9,7 @@ h1, h2, h3 {
   font-family: "Montserrat";
   src: url(../assets/Montserrat/Montserrat-VariableFont_wght.ttf);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4)s;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 h1 {
@@ -44,6 +45,7 @@ a {
   border: 1px solid #401919;
   color: white;
   border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
   margin: 5px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
