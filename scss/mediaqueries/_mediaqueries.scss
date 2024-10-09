@@ -100,14 +100,12 @@
     }
   }
   
-  .grid-list {
+  .gridserv .grid-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: auto;
     gap: 1rem;
-    list-style: none;
-    padding: 0%;
-  }
+    justify-content: center
+}
 
   .seccion2 {
     grid-template-columns: repeat(1, 1fr);
