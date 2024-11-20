@@ -12,7 +12,7 @@
   src: url(../assets/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf);
 }
 body {
-  background-color: #f2f2f2;
+  background-color: #F5F5F5;
   background: linear-gradient(90deg, white, #d2d2d2);
   color: #401a19;
   font-family: "Montserrat", sans-serif;
@@ -97,7 +97,7 @@ a {
 }
 
 footer {
-  background-color: #8c603b;
+  background-color: #B05E27;
   padding: 20px;
   display: flex;
   flex-flow: row wrap;
@@ -150,7 +150,7 @@ footer a {
   border: 1px solid black;
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
   border-radius: 0.25rem;
-  background-color: #8c603b;
+  background-color: #B05E27;
 }
 
 .carousel {
@@ -309,15 +309,15 @@ footer a {
 }
 
 .btn {
-  background-color: #8c603b;
+  background-color: #B05E27;
   text-align: center;
   border-color: #401919;
   color: #401919;
 }
 .btn:hover {
   background-color: #401919;
-  border-color: #8c603b;
-  color: #8c603b;
+  border-color: #B05E27;
+  color: #B05E27;
 }
 
 @media (max-width: 768px) {
